@@ -1,0 +1,156 @@
+/*Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+body {
+    font-family: 'Gantari', sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Gantari', sans-serif;
+}
+
+.nav-left .logo {
+    width: 80px;
+    height: auto;
+}
+
+.logo {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Center Nav */
+.nav-center ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-center ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    font-family: 'Gantari', sans-serif;
+}
+
+.nav-center ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-center ul li a:hover::after {
+    width: 100%;
+}
+
+/* Right Icons */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-right img {
+    width: 28px;
+    height: 28px;
+}
+
+.icons a img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icons a img:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+/* Cart */
+.cart-container {
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.cart-container h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.empty-cart p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.shop-now {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: #eeeeee;
+    border: 2px solid #98a6ad;
+    color: #333;
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.shop-now:hover {
+    background-color: #dce3e8;
+    border-color: #5a6d78;
+    color: #111;
+    transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin-top: 100px;
+    border-top: 1px solid #eee;
+    padding: 20px;
+}
