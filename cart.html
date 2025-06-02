@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gantari:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="nav-left">
+          <img
+            src="images/paulalogo.png"
+            alt="Paula's Choice Logo"
+            class="logo"
+          />
+        </div>
+        <nav class="nav-center">
+          <ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">New Launch</a></li>
+            <li><a href="#">Bundles</a></li>
+            <li><a href="#">Take Skin Quiz</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="nav-right icons">
+          <a href="#"><img src="images/searchicon.png" alt="Search Icon" /></a>
+          <a href="#"><img src="images/humanicon.png" alt="User Icon" /></a>
+          <a href="#"><img src="images/carticon.png" alt="Cart Icon" /></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="cart-page">
+      <h1>Your Cart</h1>
+
+      <div class="cart-items">
+        <!-- Product 1 -->
+        <div class="cart-item" id="cart-item-1">
+          <img src="images/bhakit.png" alt="BHA Kit for Face & Body" />
+          <div class="item-details">
+            <h2>BHA Kit for Face & Body</h2>
+            <p>
+              Get smooth, glowing skin from head to toe with two potent BHA
+              exfoliants formulated for your face and body.
+            </p>
+            <p><strong>Size:</strong> Kit</p>
+            <div class="quantity-control">
+              <button
+                class="quantity-btn"
+                onclick="decreaseQuantity('cart-item-1')"
+              >
+                -
+              </button>
+              <span id="quantity-cart-item-1">1</span>
+              <button
+                class="quantity-btn"
+                onclick="increaseQuantity('cart-item-1')"
+              >
+                +
+              </button>
+            </div>
+            <button class="remove-btn" onclick="removeItem('cart-item-1')">
+              Remove
+            </button>
+          </div>
+          <div class="item-price">
+            <p>A$80</p>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="cart-item" id="cart-item-2">
+          <img src="images/1BHA.png" alt="1% BHA Sensitive Skin Exfoliant" />
+          <div class="item-details">
+            <h2>1% BHA Sensitive Skin Exfoliant</h2>
+            <p>
+              A non-abrasive, leave-on exfoliant that gently smooths away
+              dulling buildup and unclogs pores while preserving skin's delicate
+              barrier.
+            </p>
+            <p><strong>Size:</strong> 510ml</p>
+            <div class="quantity-control">
+              <button
+                class="quantity-btn"
+                onclick="decreaseQuantity('cart-item-1')"
+              >
+                -
+              </button>
+              <span id="quantity-cart-item-1">1</span>
+              <button
+                class="quantity-btn"
+                onclick="increaseQuantity('cart-item-1')"
+              >
+                +
+              </button>
+            </div>
+            <button class="remove-btn" onclick="removeItem('cart-item-2')">
+              Remove
+            </button>
+          </div>
+          <div class="item-price">
+            <p>A$40</p>
+          </div>
+        </div>
+      </div>
+      <section class="related-products">
+        <div class="divider"></div>
+        <h2>Recommended For You</h2>
+        <div class="related-products-grid">
+          <div class="related-product-card">
+            <img src="images/weightless.png" alt="Weightless Body Treatment" />
+            <div class="related-product-info">
+              <h3>Weightless Body Treatment</h3>
+              <p>
+                This leave-on body exfoliant with 2% BHA gently exfoliates
+                built-up layers of dead skin to reveal the radiant smooth skin
+                hiding underneath.
+              </p>
+            </div>
+            <div class="related-product-price">
+              <p><strong>Size:</strong> 210ml</p>
+              <p class="price">A$20 <span class="delete-icon">x</span></p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="related-product-card">
+            <img src="images/1BHA.png" alt="1% BHA Sensitive Skin Exfoliant" />
+            <div class="related-product-info">
+              <h3>1% BHA Sensitive Skin Exfoliant</h3>
+              <p>
+                A non-abrasive, leave-on exfoliant that gently smooths away
+                dulling buildup and unclogs pores while preserving skin's
+                delicate barrier.
+              </p>
+            </div>
+            <div class="related-product-price">
+              <p><strong>Size:</strong> 510ml</p>
+              <p class="price">A$40 <span class="delete-icon">x</span></p>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="cart-summary">
+        <div class="progress-bar-wrapper">
+          <p id="free-shipping-msg">
+            Spend extra A$100 to be eligible for free shipping!
+          </p>
+          <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+        <div class="subtotal">
+          <p><strong>Subtotal:</strong> <span id="subtotal">A$0</span></p>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Paula’s Choice. All rights reserved.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+  </body>
+</html>
