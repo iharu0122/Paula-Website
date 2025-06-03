@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gantari:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="nav-left">
+          <img
+            src="images/paulalogo.png"
+            alt="Paula's Choice Logo"
+            class="logo"
+          />
+        </div>
+        <nav class="nav-center">
+          <ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">New Launch</a></li>
+            <li><a href="#">Bundles</a></li>
+            <li><a href="#">Take Skin Quiz</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="nav-right icons">
+          <a href="#"><img src="images/searchicon.png" alt="Search Icon" /></a>
+          <a href="#"><img src="images/humanicon.png" alt="User Icon" /></a>
+          <a href="#"><img src="images/carticon.png" alt="Cart Icon" /></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="checkout-container">
+      <h1>Checkout</h1>
+      <hr />
+      <section class="delivery-address">
+        <h2>Delivery Address</h2>
+
+        <div class="address-form">
+          <input type="text" placeholder="Full Name" required />
+          <input type="text" placeholder="Address Line 1" required />
+          <input type="text" placeholder="Address Line 2 (Optional)" />
+          <input type="text" placeholder="City" required />
+          <input type="text" placeholder="State" required />
+          <input type="text" placeholder="ZIP / Postcode" required />
+          <input type="text" placeholder="Country" required />
+          <button class="save-address">Save Address</button>
+        </div>
+      </section>
+
+      <section class="delivery-address">
+        <div class="address-info">
+          <img
+            src="images/addressicon.png"
+            alt="Address Icon"
+            class="address-icon"
+          />
+          <div class="address-text">
+            <strong>Home</strong>
+            <p id="saved-address">No address saved yet.</p>
+          </div>
+          <a href="#" class="change-link">Change</a>
+        </div>
+      </section>
+
+      <section class="payment-method">
+        <h2>Payment Method</h2>
+        <div class="payment-options">
+          <button class="payment-option selected" id="card-btn">
+            <img src="images/ccicon.png" alt="Card" />
+            <span>Card</span>
+          </button>
+          <button class="payment-option" id="cash-btn">
+            <img src="images/cashicon.png" alt="Cash" />
+            <span>Cash</span>
+          </button>
+          <button class="payment-option" id="applepay-btn">
+            <img
+              src="images/applepayicon.png"
+              alt="Apple Pay"
+              class="apple-pay"
+            />
+          </button>
+        </div>
+
+        <div class="card-info-form" id="card-form">
+          <input type="text" placeholder="Card Number" class="input-field" />
+          <div class="card-details">
+            <input type="text" placeholder="MM/YY" class="input-field half" />
+            <input type="text" placeholder="CVV" class="input-field half" />
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <aside class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-line">
+          <span>Sub-total</span>
+          <span>A$170</span>
+        </div>
+        <div class="summary-line">
+          <span>Delivery Fee</span>
+          <span>A$0</span>
+        </div>
+        <div class="summary-line">
+          <span>Discount</span>
+          <span>A$0</span>
+        </div>
+
+        <div class="promo-code">
+          <input type="text" placeholder="Enter promo code" />
+          <button class="add-button">Add</button>
+        </div>
+
+        <div class="summary-total">
+          <strong>Total</strong>
+          <strong>A$170</strong>
+        </div>
+
+        <button class="checkout-btn" disabled>Checkout</button>
+      </aside>
+    </main>
+    <!-- Modal for pop up -->
+    <div class="modal" id="orderModal">
+      <div class="modal-content">
+        <img
+          src="images/orderconfirmicon.png"
+          alt="Success"
+          class="success-icon"
+        />
+        <h2>Congratulations!</h2>
+        <p>Your order has been placed.</p>
+        <button class="track-btn" id="trackOrderBtn">Track Your Order</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="checkout.js"></script>
