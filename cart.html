@@ -37,6 +37,20 @@
       </div>
     </header>
 
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+      <ul>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">New Launch</a></li>
+        <li><a href="#">Bundles</a></li>
+        <li><a href="#">Take Skin Quiz</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
     <main class="cart-page">
       <h1>Your Cart</h1>
 
@@ -89,14 +103,14 @@
             <div class="quantity-control">
               <button
                 class="quantity-btn"
-                onclick="decreaseQuantity('cart-item-1')"
+                onclick="decreaseQuantity('cart-item-2')"
               >
                 -
               </button>
-              <span id="quantity-cart-item-1">1</span>
+              <span id="quantity-cart-item-2">1</span>
               <button
                 class="quantity-btn"
-                onclick="increaseQuantity('cart-item-1')"
+                onclick="increaseQuantity('cart-item-2')"
               >
                 +
               </button>
@@ -110,10 +124,12 @@
           </div>
         </div>
       </div>
+
       <section class="related-products">
         <div class="divider"></div>
         <h2>Recommended For You</h2>
         <div class="related-products-grid">
+          <!-- Product 1 -->
           <div class="related-product-card">
             <img src="images/weightless.png" alt="Weightless Body Treatment" />
             <div class="related-product-info">
@@ -131,6 +147,7 @@
             </div>
           </div>
 
+          <!-- Product 2 -->
           <div class="related-product-card">
             <img src="images/1BHA.png" alt="1% BHA Sensitive Skin Exfoliant" />
             <div class="related-product-info">
@@ -149,6 +166,7 @@
           </div>
         </div>
       </section>
+
       <div class="cart-summary">
         <div class="progress-bar-wrapper">
           <p id="free-shipping-msg">
@@ -168,7 +186,6 @@
     <footer>
       <p>© 2025 Paula’s Choice. All rights reserved.</p>
     </footer>
-
     <script src="cart.js"></script>
   </body>
 </html>
