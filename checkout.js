@@ -15,6 +15,31 @@ overlay.addEventListener('click', function() {
   overlay.classList.remove('active');
 });
 
+// Search Bar
+const searchIcon = document.querySelector('.search-icon');
+const searchContainer = document.getElementById('searchContainer');
+
+// Toggle active class
+searchIcon.addEventListener('click', (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  searchContainer.classList.toggle('active');
+});
+
+// Close on clicking outside
+document.addEventListener('click', (e) => {
+  if (searchContainer.classList.contains('active') && !searchContainer.contains(e.target) && !searchIcon.contains(e.target)) {
+    searchContainer.classList.remove('active');
+  }
+});
+
+// Close on ESC key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && searchContainer.classList.contains('active')) {
+    searchContainer.classList.remove('active');
+  }
+});
+
 // Handle Payment Option Selection
 const cardBtn = document.getElementById("card-btn");
 const cashBtn = document.getElementById("cash-btn");
