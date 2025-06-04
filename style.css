@@ -167,6 +167,7 @@ footer {
     gap: 40px;
 }
 
+
 .category-item {
     width: 200px;
 }
@@ -176,6 +177,12 @@ footer {
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-grid a.category-item {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
 }
 
 .category-item img:hover {
