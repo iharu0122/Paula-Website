@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 const logo = document.querySelector('.logo');
 const sidebar = document.getElementById('mobileSidebar');
 const overlay = document.getElementById('overlay'); // <- ADD THIS LINE
@@ -39,4 +40,5 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && searchContainer.classList.contains('active')) {
     searchContainer.classList.remove('active');
   }
+});
 });

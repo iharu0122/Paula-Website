@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 // Handle Nav Bar Opening And Closing
 const logo = document.querySelector('.logo');
 const sidebar = document.getElementById('mobileSidebar');
@@ -79,4 +80,5 @@ checkoutBtn.addEventListener("click", function () {
 const trackBtn = document.querySelector(".track-btn");
 trackBtn.addEventListener("click", function () {
   window.location.href = "track-order.html"; // link page
+});
 });
