@@ -525,13 +525,15 @@ footer {
 }
 
 .modal-content {
-    background-color: white;
+    background-color: #ffffff;
     padding: 40px;
-    border-radius: 12px;
+    border-radius: 16px;
     text-align: center;
     max-width: 400px;
     width: 90%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    font-family: 'Gantari', sans-serif;
+    animation: fadeIn 0.3s ease;
 }
 
 .success-icon {
@@ -540,19 +542,51 @@ footer {
     margin-bottom: 20px;
 }
 
+.modal-content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
 .track-btn {
     margin-top: 20px;
-    padding: 12px 30px;
-    background-color: #444;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
+    padding: 14px 30px;
+    background-color: #eeeeee;
+    color: #333;
+    border: 1px solid #98a6ad;
+    font-family: 'Gantari', sans-serif;
+    font-weight: 700;
     font-size: 16px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .track-btn:hover {
-    background-color: #333;
+    background-color: #dce3e8;
+    border-color: #5a6d78;
+    color: #111;
+    transform: scale(1.05);
+}
+
+/* Anim */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 /* Sidebar*/
