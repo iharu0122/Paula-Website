@@ -37,7 +37,9 @@
               class="search-icon"
           /></a>
           <a href="#"><img src="images/humanicon.png" alt="User Icon" /></a>
-          <a href="#"><img src="images/carticon.png" alt="Cart Icon" /></a>
+          <a href="cart.html"
+            ><img src="images/carticon.png" alt="Cart Icon"
+          /></a>
           <div class="search-container" id="searchContainer">
             <input type="text" placeholder="Search..." class="search-input" />
           </div>
@@ -58,12 +60,16 @@
 
     <!-- Overlay -->
     <div class="overlay" id="overlay"></div>
-
+    <div class="cart-container">
     <main class="cart-page">
       <h1>Your Cart</h1>
 
       <div class="cart-items"></div>
-
+      <div class="empty-cart-message" style="display: none">
+        <p>Your cart is currently empty.</p>
+        <a href="index.html" class="empty-cart-btn">Shop Now</a>
+      </div>
+      
       <section class="related-products">
         <div class="divider"></div>
         <h2>Recommended For You</h2>

@@ -457,6 +457,39 @@ footer {
     visibility: visible;
 }
 
+.empty-cart-message {
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.empty-cart-message p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.empty-cart-btn {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: #eeeeee;
+    border: 2px solid #98a6ad;
+    color: #333;
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.empty-cart-btn:hover {
+    background-color: #dce3e8;
+    border-color: #5a6d78;
+    color: #111;
+    transform: scale(1.03);
+}
+
+
 /*  Mobile Responsive Cart Page */
 @media (max-width: 768px) {
     .navbar {
