@@ -131,6 +131,30 @@ body {
     border-color: #5a6d78;
 }
 
+.cart-icon-wrapper {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background-color: #5a6d78;
+    color: white;
+    font-size: 11px;
+    padding: 3px 6px;
+    border-radius: 999px;
+    font-weight: 600;
+    display: none;
+    line-height: 1;
+    min-width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 2px white;
+}
+
 /* Footer */
 footer {
     text-align: center;

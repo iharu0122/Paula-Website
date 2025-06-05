@@ -37,9 +37,12 @@
               class="search-icon"
           /></a>
           <a href="#"><img src="images/humanicon.png" alt="User Icon" /></a>
-          <a href="cart.html"
-            ><img src="images/carticon.png" alt="Cart Icon"
-          /></a>
+          <div class="cart-icon-wrapper">
+            <a href="cart.html">
+              <img src="images/carticon.png" alt="Cart Icon" />
+            </a>
+            <span id="cart-count" class="cart-count">0</span>
+          </div>
           <div class="search-container" id="searchContainer">
             <input type="text" placeholder="Search..." class="search-input" />
           </div>
@@ -169,8 +172,8 @@
         <button class="track-btn" id="trackOrderBtn">Track Your Order</button>
       </div>
     </div>
-    <script src="js/navbar.js"></script>
-    <script src="js/cart.js"></script>
+    <script src="navbar.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>
 <script src="checkout.js"></script>
