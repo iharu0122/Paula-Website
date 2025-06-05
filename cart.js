@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   updateCartCount();
-  renderCart();
+
+  const cartItemsContainer = document.querySelector('.cart-items');
+  if (cartItemsContainer) {
+    renderCart();
+  }
 });
 
 function updateCartCount() {
@@ -31,6 +35,10 @@ function renderCart() {
   const emptyCartMessage = document.querySelector('.empty-cart-message');
   const cartSummary = document.querySelector('.cart-summary');
   const relatedProducts = document.querySelector('.related-products');
+
+  if (!cartItemsContainer || !subtotalElement || !progressBar || !emptyCartMessage || !cartSummary || !relatedProducts) {
+    return;
+  }
 
   cartItemsContainer.innerHTML = '';
 
@@ -81,10 +89,12 @@ function renderCart() {
   progressBar.style.width = `${progress}%`;
 
   const freeShippingMsg = document.getElementById('free-shipping-msg');
-  if (subtotal >= 100) {
-    freeShippingMsg.textContent = 'You are eligible for free shipping!';
-  } else {
-    freeShippingMsg.textContent = `Spend extra A$${100 - subtotal} to be eligible for free shipping!`;
+  if (freeShippingMsg) {
+    if (subtotal >= 100) {
+      freeShippingMsg.textContent = 'You are eligible for free shipping!';
+    } else {
+      freeShippingMsg.textContent = `Spend extra A$${100 - subtotal} to be eligible for free shipping!`;
+    }
   }
 
   // Event delegation for quantity and remove buttons
