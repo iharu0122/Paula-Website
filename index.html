@@ -86,7 +86,18 @@
               exfoliating toner with salicylic acid quickly unclogs pores and
               controls oil for clear, glowing skin.”
             </p>
-            <button class="add-to-cart">Add To Cart</button>
+            <button 
+  class="add-to-cart" 
+  data-id="product-003" 
+  data-name="2% BHA Liquid Exfoliant" 
+  data-desc="Clinically proven daily exfoliating toner with salicylic acid for clear, glowing skin."
+  data-size="30ml"
+  data-price="50" 
+  data-image="images/2BHA.png"
+>
+  Add To Cart
+</button>
+
           </div>
         </div>
       
@@ -142,7 +153,18 @@
             <p>6% Mandelic Acid + 2% Liquid Exfoliant</p>
             <p>⭐ 5.0</p>
             <p>A$120</p>
-            <button>Add To Cart</button>
+            <button 
+  class="add-to-cart" 
+  data-id="product-004" 
+  data-name="6% Mandelic Acid + 2% Liquid Exfoliant" 
+  data-desc="Dual-action exfoliant combining mandelic acid and salicylic acid to clear pores and smooth skin."
+  data-size="120ml"
+  data-price="120" 
+  data-image="images/6mandelic.png"
+>
+  Add To Cart
+</button>
+
           </div>
           <div class="product-card">
             <img
@@ -152,21 +174,54 @@
             <p>Weightless Body Treatment with 2% BHA</p>
             <p>⭐ 5.0</p>
             <p>A$80</p>
-            <button>Add To Cart</button>
+            <button 
+  class="add-to-cart" 
+  data-id="product-005" 
+  data-name="Weightless Body Treatment with 2% BHA" 
+  data-desc="Leave-on body exfoliant with 2% BHA that gently exfoliates dead skin for smoothness."
+  data-size="210ml"
+  data-price="80" 
+  data-image="images/weightless.png"
+>
+  Add To Cart
+</button>
+
           </div>
           <div class="product-card">
             <img src="images/25AHA.png" alt="25% AHA + 2% BHA Exfoliant Peel" />
             <p>25% AHA + 2% BHA Exfoliant</p>
             <p>⭐ 5.0</p>
             <p>A$90</p>
-            <button>Add To Cart</button>
+            <button 
+  class="add-to-cart" 
+  data-id="product-006" 
+  data-name="25% AHA + 2% BHA Exfoliant" 
+  data-desc="High-strength exfoliant with AHAs and BHAs to renew skin’s surface and clear pores."
+  data-size="90ml"
+  data-price="90" 
+  data-image="images/25AHA.png"
+>
+  Add To Cart
+</button>
+
           </div>
           <div class="product-card">
             <img src="images/1BHA.png" alt="1% BHA Sensitive Skin Exfoliant" />
             <p>1% BHA Sensitive Skin Exfoliant</p>
             <p>⭐ 5.0</p>
             <p>A$40</p>
-            <button>Add To Cart</button>
+            <button 
+  class="add-to-cart" 
+  data-id="product-007" 
+  data-name="1% BHA Sensitive Skin Exfoliant" 
+  data-desc="Gentle leave-on exfoliant that smooths dullness and unclogs pores while preserving skin’s barrier."
+  data-size="510ml"
+  data-price="40" 
+  data-image="images/1BHA.png"
+>
+  Add To Cart
+</button>
+
           </div>
         </div>
       </section>
@@ -175,9 +230,12 @@
     <footer>
       <p>© 2025 Paula’s Choice. All rights reserved.</p>
     </footer>
+    <div id="toast" class="toast"></div>
+
+    <script src="toast.js"></script>
+    <script src="navbar.js"></script>
+    <script src="cart.js"></script>
+    <script src="addToCart.js"></script>
+    
   </body>
-
-<script src="navbar.js"></script>
-<script src="cart.js"></script>
-
 </html>

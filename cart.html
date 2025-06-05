@@ -93,7 +93,18 @@
             <div class="related-product-price">
               <p><strong>Size:</strong> 210ml</p>
               <p class="price">A$20 <span class="delete-icon">x</span></p>
-              <button class="add-to-cart">Add To Cart</button>
+              <button 
+  class="add-to-cart" 
+  data-id="product-005" 
+  data-name="Weightless Body Treatment with 2% BHA" 
+  data-desc="Leave-on body exfoliant with 2% BHA that gently exfoliates dead skin for smoothness."
+  data-size="210ml"
+  data-price="80" 
+  data-image="images/weightless.png"
+>
+  Add To Cart
+</button>
+
             </div>
           </div>
 
@@ -111,7 +122,18 @@
             <div class="related-product-price">
               <p><strong>Size:</strong> 510ml</p>
               <p class="price">A$40 <span class="delete-icon">x</span></p>
-              <button class="add-to-cart">Add To Cart</button>
+              <button 
+  class="add-to-cart" 
+  data-id="product-007" 
+  data-name="1% BHA Sensitive Skin Exfoliant" 
+  data-desc="Gentle leave-on exfoliant that smooths dullness and unclogs pores while preserving skin’s barrier."
+  data-size="510ml"
+  data-price="40" 
+  data-image="images/1BHA.png"
+>
+  Add To Cart
+</button>
+
             </div>
           </div>
         </div>
@@ -138,8 +160,13 @@
     <footer>
       <p>© 2025 Paula’s Choice. All rights reserved.</p>
     </footer>
+    <div id="toast" class="toast"></div>
+
     <script src="toast.js"></script> 
     <script src="navbar.js"></script> 
-    <script src="cart.js"></script>     
+    <script src="cart.js"></script>
+    <script src="addToCart.js"></script>
+  
+   
   </body>
 </html>

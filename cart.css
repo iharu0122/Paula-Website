@@ -11,6 +11,11 @@ body {
     padding: 20px;
 }
 
+.cart-body .toast {
+    top: 30px;
+  }
+  
+
 @import url('https://fonts.googleapis.com/css2?family=Gantari:wght@400;600&display=swap');
 
 .navbar {
@@ -512,6 +517,8 @@ footer {
     color: #111;
     transform: scale(1.03);
 }
+
+
 
 
 /*  Mobile Responsive Cart Page */

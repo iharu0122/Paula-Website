@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCartCount();
 
   const cartItemsContainer = document.querySelector('.cart-items');
-  if (cartItemsContainer) {
+  const subtotalElement = document.getElementById('subtotal');
+
+  if (cartItemsContainer && subtotalElement) {
     renderCart();
   }
 });
@@ -28,7 +30,7 @@ function updateCartCount() {
 
 function renderCart() {
   const cart = JSON.parse(localStorage.getItem('cart')) || [];
-
+  
   const cartItemsContainer = document.querySelector('.cart-items');
   const subtotalElement = document.getElementById('subtotal');
   const progressBar = document.getElementById('progress');
@@ -36,7 +38,7 @@ function renderCart() {
   const cartSummary = document.querySelector('.cart-summary');
   const relatedProducts = document.querySelector('.related-products');
 
-  if (!cartItemsContainer || !subtotalElement || !progressBar || !emptyCartMessage || !cartSummary || !relatedProducts) {
+  if (!cartItemsContainer || !subtotalElement) {
     return;
   }
 
@@ -97,7 +99,6 @@ function renderCart() {
     }
   }
 
-  // Event delegation for quantity and remove buttons
   cartItemsContainer.addEventListener('click', (event) => {
     const id = event.target.dataset.id;
     const action = event.target.dataset.action;
@@ -124,7 +125,6 @@ function renderCart() {
   });
 }
 
-// Helper function to update cart in localStorage
 function updateCart(cart) {
   localStorage.setItem('cart', JSON.stringify(cart));
   renderCart();
