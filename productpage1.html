@@ -37,7 +37,10 @@
               class="search-icon"
           /></a>
           <a href="#"><img src="images/humanicon.png" alt="User Icon" /></a>
-          <a href="#"><img src="images/carticon.png" alt="Cart Icon" /></a>
+          <div class="cart-icon-wrapper">
+            <a href="#"><img src="images/carticon.png" alt="Cart Icon" /></a>
+            <span id="cart-count" class="cart-count">0</span>
+          </div>
           <div class="search-container" id="searchContainer">
             <input type="text" placeholder="Search..." class="search-input" />
           </div>
@@ -173,6 +176,7 @@
     <footer>
       <p>© 2025 Paula’s Choice. All rights reserved.</p>
     </footer>
+    <div id="toast" class="toast">Product added to cart!</div>
   </body>
   <script src="productpage1.js"></script>
 </html>
