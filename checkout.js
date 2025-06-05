@@ -211,4 +211,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update checkout button state
     updateCheckoutButton();
   });
+
+  document.getElementById('trackOrderBtn').addEventListener('click', function() {
+    document.getElementById('orderModal').style.display = 'none';
+    document.getElementById('thankyouModal').style.display = 'flex';
+  });
+
 });
+
+// Easter Egg
+  function closeThankYou() {
+    const thankyouModalContent = document.querySelector('#thankyouModal .modal-content');
+    thankyouModalContent.classList.add('fade-out');
+    setTimeout(() => {
+      window.location.href = 'https://iharu0122.github.io/Paula-Website/index.html';
+    }, 200);
+  }
+  
+
