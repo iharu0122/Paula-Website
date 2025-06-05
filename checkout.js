@@ -22,6 +22,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let addressSaved = false;
 
+  // Order Summary Based on Cart ===
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  let subtotal = 0;
+
+  cart.forEach(item => {
+    subtotal += item.price * item.quantity;
+  });
+
+  const subtotalElement = document.querySelector('.summary-line span:nth-child(2)');
+  const totalElement = document.querySelector('.summary-total strong:nth-child(2)');
+
+  if (subtotalElement) {
+    subtotalElement.textContent = `A$${subtotal}`;
+  }
+  if (totalElement) {
+    totalElement.textContent = `A$${subtotal}`;
+  }
+
   // --- Payment Method Selection ---
   cardBtn.addEventListener("click", () => {
     cardBtn.classList.add("selected");
