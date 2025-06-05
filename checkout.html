@@ -71,15 +71,29 @@
         <h2>Delivery Address</h2>
 
         <div class="address-form">
-          <input type="text" placeholder="Full Name" required />
-          <input type="text" placeholder="Address Line 1" required />
-          <input type="text" placeholder="Address Line 2 (Optional)" />
-          <input type="text" placeholder="City" required />
-          <input type="text" placeholder="State" required />
-          <input type="text" placeholder="ZIP / Postcode" required />
-          <input type="text" placeholder="Country" required />
+          <input id="full-name" type="text" placeholder="Full Name" required />
+          <input
+            id="address-line-1"
+            type="text"
+            placeholder="Address Line 1"
+            required
+          />
+          <input
+            id="address-line-2"
+            type="text"
+            placeholder="Address Line 2 (Optional)"
+          />
+          <input id="city" type="text" placeholder="City" required />
+          <input id="state" type="text" placeholder="State" required />
+          <input id="zip" type="text" placeholder="ZIP / Postcode" required />
+          <input id="country" type="text" placeholder="Country" required />
+        </div>
+
+        <!--wrapper div -->
+        <div class="save-address-container">
           <button class="save-address">Save Address</button>
         </div>
+        <div id="save-message" class="save-message"></div>
       </section>
 
       <section class="delivery-address">
@@ -118,13 +132,19 @@
         </div>
 
         <div class="card-info-form" id="card-form">
-          <input type="text" placeholder="Card Number" class="input-field" />
-          <div class="card-details">
-            <input type="text" placeholder="MM/YY" class="input-field half" />
-            <input type="text" placeholder="CVV" class="input-field half" />
-          </div>
-        </div>
-      </section>
+          <input type="text" id="card-number" placeholder="Card Number" class="input-field" />
+<div class="error-message" id="card-number-error"></div>
+
+<div class="card-details">
+  <div class="input-group">
+    <input type="text" id="expiry" placeholder="MM/YY" class="input-field half" />
+    <div class="error-message" id="expiry-error"></div>
+  </div>
+  <div class="input-group">
+    <input type="text" id="cvv" placeholder="CVV" class="input-field half" />
+    <div class="error-message" id="cvv-error"></div>
+  </div>
+</div>
 
       <hr />
 
