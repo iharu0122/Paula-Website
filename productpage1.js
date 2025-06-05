@@ -41,4 +41,12 @@ document.addEventListener('keydown', (e) => {
     searchContainer.classList.remove('active');
   }
 });
+
+
+// Logo Click to Landing Page 
+logo.addEventListener('click', () => {
+  if (window.innerWidth > 768) {
+    window.location.href = 'https://iharu0122.github.io/Paula-Website/index.html'; 
+  }
+});
 });

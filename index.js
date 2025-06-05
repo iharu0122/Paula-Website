@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
 const logo = document.querySelector('.logo');
 const sidebar = document.getElementById('mobileSidebar');
-const overlay = document.getElementById('overlay'); // <- ADD THIS LINE
+const overlay = document.getElementById('overlay');
 
 // Open sidebar and overlay
 logo.addEventListener('click', function() {
   if (window.innerWidth <= 768) {
     sidebar.classList.toggle('active');
-    overlay.classList.toggle('active'); // <- ADD THIS
+    overlay.classList.toggle('active');
   }
 });
 
