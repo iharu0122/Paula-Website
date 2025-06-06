@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   checkoutBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    
+    localStorage.removeItem('cart');
     // Show the modal
     orderModal.style.display = 'flex';
   });
@@ -216,6 +216,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('orderModal').style.display = 'none';
     document.getElementById('thankyouModal').style.display = 'flex';
   });
+
+  
 
 });
 
