@@ -635,11 +635,9 @@ footer {
             border-bottom: 1px solid #eee;
         }
     
-        .cart-item img {
-            width: 300px;
-            height: auto;
-            border-radius: 8px;
-        }
+                .cart-items img {
+                    width: 300px;
+                    height: 300px;       }
     
                 .item-details {
                     display: flex;
